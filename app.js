@@ -66,7 +66,8 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.Client_Id,
     clientSecret: process.env.Client_Secret,
-    callbackURL: "http://localhost:3000/auth/google/joinroom",
+    // callbackURL: "http://localhost:3000/auth/google/joinroom",
+    callbackURL: "https://real-time-room-chat-app.herokuapp.com/auth/google/joinroom",
     userProfileURL:"https://www.googleapis.com/oauth2/v3/userinfo"
   },
   function(accessToken, refreshToken, profile, cb) {
@@ -79,7 +80,8 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret:process.env.FACEBOOK_APP_SECRET,
-    callbackURL: "http://localhost:3000/auth/facebook/joinroom",
+    // callbackURL: "http://localhost:3000/auth/facebook/joinroom",
+    callbackURL: "https://real-time-room-chat-app.herokuapp.com/auth/facebook/joinroom",
   },
   function(accessToken, refreshToken, profile, cb) {
       console.log(profile);
@@ -206,7 +208,6 @@ io.on("connection",(socket)=>{
 });
 
 const port=process.env.PORT || 3000;
-
 server.listen(port,function(){
     console.log(`Server started on port ${port}`);
 });

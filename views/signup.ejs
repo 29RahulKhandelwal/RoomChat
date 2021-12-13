@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<div class="centered-form">
+<div class="centered-form__box">
+  <h1>RoomChat</h1>
+  <form action="/signup" method="POST">
+      <label for="username">Email</label>
+      <input type="email" class="form-control" name="username" placeholder="Enter your email">            
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" placeholder="Enter your name">            
+      <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Enter your password">
+    <button type="submit" class="btn btn-dark">SignUp</button>
+  </form>
+  <hr data-content="OR">
+      <button class="loginBtn loginBtn--facebook">
+        <a href="/auth/google" role="button" class="ahr">Signup with Google</a>
+      </button>
+      <button class="loginBtn loginBtn--google">
+        <a href="/auth/facebook" role="button" class="ahr">Signup with Facebook</a>
+      </button>
+      <hr data-content="OR">
+      <button class="btn">
+        <a href="/" role="button" class="ahr">Login</a>
+      </button>
+  </div>
+</div>
+<%- include('partials/footer') %>

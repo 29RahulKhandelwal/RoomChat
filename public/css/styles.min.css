@@ -311,6 +311,9 @@ a{
   border-radius: 12px;
 }
 @media screen and (min-width:600px) {
+  .sidebar{
+    height: 70%;
+  }
   .sidebar li#logout{
     position: fixed;
     height: 60px;

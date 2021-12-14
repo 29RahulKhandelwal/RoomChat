@@ -75,8 +75,8 @@ socket.on('roomData',({room,users})=>{
     function menuBtnChange() {
         if(sidebar.classList.contains("open")){
             closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-            logout.style.width="250px";
-            joinRoom.style.width="250px";
+            logout.style.width="225px";
+            joinRoom.style.width="225px";
             
             var x=document.querySelectorAll(".parahide");
             for(var i=0;i<x.length;i++){
@@ -85,8 +85,8 @@ socket.on('roomData',({room,users})=>{
         }
         else {
             closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-            logout.style.width="78px";
-            joinRoom.style.width="78px";
+            logout.style.width="58px";
+            joinRoom.style.width="58px";
             
             var x=document.querySelectorAll(".parahide");
             for(var i=0;i<x.length;i++){

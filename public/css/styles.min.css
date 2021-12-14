@@ -225,12 +225,12 @@ a{
   margin-top: 20px;
   height: 100%;
 }
-.sidebar li{
+.sidebar .list{
   position: relative;
   margin: 8px 0;
   list-style: none;
 }
-.sidebar li .tooltip{
+.sidebar .list .tooltip{
   position: absolute;
   top: -20px;
   left: calc(100% + 15px);
@@ -246,14 +246,14 @@ a{
   pointer-events: none;
   transition: 0s;
 }
-.sidebar li:hover .tooltip{
+.sidebar .list:hover .tooltip{
   opacity: 1;
   pointer-events: auto;
   transition: all 0.4s ease;
   top: 50%;
   transform: translateY(-50%);
 }
-.sidebar.open li .tooltip{
+.sidebar.open .list .tooltip{
   display: none;
 }
 .sidebar input{
@@ -273,7 +273,7 @@ a{
   padding: 0 20px 0 50px;
   width: 100%;
 }
-.sidebar li a{
+.sidebar .list a{
   display: flex;
   height: 100%;
   width: 100%;
@@ -283,10 +283,10 @@ a{
   transition: all 0.4s ease;
   background: #11101D;
 }
-.sidebar li a:hover{
+.sidebar .list a:hover{
   background: #FFF;
 }
-.sidebar li a .links_name{
+.sidebar .list a .links_name{
   color: #fff;
   font-size: 15px;
   font-weight: 400;
@@ -295,42 +295,42 @@ a{
   pointer-events: none;
   transition: 0.4s;
 }
-.sidebar.open li a .links_name{
+.sidebar.open .list a .links_name{
   opacity: 1;
   pointer-events: auto;
 }
-.sidebar li a:hover .links_name,
-.sidebar li a:hover i{
+.sidebar .list a:hover .links_name,
+.sidebar .list a:hover i{
   transition: all 0.5s ease;
   color: #11101D;
 }
-.sidebar li i{
+.sidebar .list i{
   height: 50px;
   line-height: 50px;
   font-size: 18px;
   border-radius: 12px;
 }
-.sidebar li#logout{
-  position: fixed;
-  height: 60px;
-  width: 250px;
-  left: 0;
-  bottom: -8px;
-  padding: 10px 14px;
-  background: #1d1b31;
-  transition: all 0.5s ease;
-  overflow: hidden;
-}
-.sidebar li#joinRoom{
-  position: fixed;
-  height: 60px;
-  width: 250px;
-  left: 0;
-  bottom: 50px;
-  padding: 10px 14px;
-  background: #1d1b31;
-  transition: all 0.5s ease;
-  overflow: hidden;
+@media screen and (min-width:600px) {
+  .sidebar li#logout{
+    position: fixed;
+    height: 60px;
+    width: 250px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+  .sidebar li#joinRoom{
+    position: fixed;
+    height: 60px;
+    width: 250px;
+    left: 0;
+    bottom: 50px;
+    padding: 10px 14px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
 }
 
 .chat__main{

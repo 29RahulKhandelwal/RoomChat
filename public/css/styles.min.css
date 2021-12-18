@@ -311,9 +311,6 @@ a{
   border-radius: 12px;
 }
 @media screen and (min-width:600px) {
-  .sidebar{
-    height: 70%;
-  }
   .sidebar li#logout{
     position: fixed;
     height: 60px;
@@ -363,11 +360,11 @@ a{
 .links_name{
   color: #fff;
 }
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
   }
-}
+} */
 .chat__messages{
     flex-grow:1;
     padding:24px 24px 0;

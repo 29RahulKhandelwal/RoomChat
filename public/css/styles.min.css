@@ -331,6 +331,9 @@ a{
     transition: all 0.5s ease;
     overflow: hidden;
   }
+  #logout,#joinRoom{
+    width: 78px;
+  }
 }
 
 .chat__main{

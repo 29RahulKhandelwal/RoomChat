@@ -85,8 +85,8 @@ socket.on('roomData',({room,users})=>{
         }
         else {
             closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-            logout.style.width="58px";
-            joinRoom.style.width="58px";
+            logout.style.width="78px";
+            joinRoom.style.width="78px";
             
             var x=document.querySelectorAll(".parahide");
             for(var i=0;i<x.length;i++){

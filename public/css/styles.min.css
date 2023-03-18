@@ -331,7 +331,10 @@ a{
     transition: all 0.5s ease;
     overflow: hidden;
   }
-  #logout,#joinRoom{
+  #logout{
+    width: 78px;
+  }
+  #joinRoom{
     width: 78px;
   }
 }

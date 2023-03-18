@@ -119,6 +119,7 @@ app.get("/signup",function(req,res){
 app.get("/joinroom",function(req,res){
     if(req.isAuthenticated()){
         res.render("joinroom",{name:req.user.name,fbname:req.user.facebookDisplayName});
+        // console.log(req.user.name)
     }else{
         res.redirect("/");
     }
